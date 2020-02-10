@@ -1,0 +1,271 @@
+/* Variables */
+
+$font-text: 'Signika', sans-serif;
+$font-header: 'Inconsolata', monospace;
+
+/* niebieski */
+$color-one: #0097e6;
+
+/* zielony */
+$color-two: #33d9b2; 
+
+/* czerwony */
+$color-three: #ff5252;
+
+/* granatowy */
+$color-four: #2c2c54;
+
+/* bialy */
+$color-five: #ffffff;
+
+/* Global */
+*, *::before, *::after {
+        box-sizing: border-box;
+}
+
+body {
+    font-family: $font-header;
+    text-align: center;
+    background: #fff;
+    color: #2c2c54;
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0;
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+    border-spacing: 96px;
+}
+.section {
+    padding: 96px 0;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 160px;
+    margin: 24px auto 0 auto;
+    padding: 16px;
+    border-radius: 5px;
+    font-family: $font-header; 
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-width: 2px;
+    border-style: solid;
+    background-position: 100% 0;
+    background-size: 300%;
+}
+
+/* Navigation */
+
+.navigation {
+    background: $color-one;
+    padding: 12px 0 12px 0;
+}
+.navigation ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none; 
+}
+
+.navigation li {
+    display: inline-block;
+    margin-right: 36px;
+    position: relative;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: $color-five;
+}
+
+.navigation a:hover {
+    color: #fff;    
+}
+
+.navigation ul ul li {
+    display: block;
+    margin: 0 0 12px 0;
+   
+}
+.navigation {
+                ul{
+                    ul{
+                        display: none;
+                    }
+                }
+}
+
+.navigation li:hover ul {
+    display: block;
+    text-align: center;
+    position: absolute;
+    background: $color-five;
+    padding: 12px 24px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.navigation li ul a {
+    color: $color-one;
+}
+
+.navigation li ul a:hover {
+    color: $color-two;
+}
+
+/*Splash*/
+
+.splash {
+    background: $color-one;
+    height: 500px;
+    color: $color-five;
+    display: flex;
+}
+
+.splash-inner {
+    margin: auto;
+    max-width: 70%;
+    
+}
+
+.page-title {
+    margin: 0;
+    font: 72px;
+    word-spacing: -14px;
+    width: 700;
+    line-height: 1.2;    
+}
+
+.page-subtitle {
+    margin: 24px 0;
+    width: 400;
+    font-size: 16px;
+}
+
+.btn-one {
+    border-color: $color-five;
+    color: $color-five;
+    background-image: linear-gradient(90deg, #ffffff 50%, transparent 50%);
+}
+
+.btn:hover {
+    background-position: 0 100%;
+    color: $color-one;
+    transition: all 2s;
+    background-image: linear-gradient(90deg, #fff 50%, transparent 50%);
+}
+
+/* OUR SERVICES */
+
+.services-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.container .h1 {
+    font-size: 48px;
+    margin: 0 0 72px 0;
+    left: 0;
+}
+
+.services-row .work-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.services-row div {
+    flex: 0 0 33.333%;
+    position: relative;
+    padding: 30px;
+    text-align: left;
+}
+
+.services-row h2 {
+  text-align: left;  
+  font-size: 24px;
+  margin: 0 0 12px 0;
+  list-style-type: none;  
+}
+
+.services-row span {
+   font-size: 144px;
+   color: $color-four;
+   opacity: 0.5;
+   position:absolute; 
+   top: 0;
+   left: 0;
+   font-weight: 800;
+   line-height: 1;
+}
+
+.services-row p:first-of-type {
+  font-weight: bold;
+}
+
+.btn-two {
+    color: $color-two;
+    background-image: linear-gradient(90deg, #ffffff 50%, transparent 50%);
+}
+
+.btn-three {
+    color: $color-three;
+    background-image: linear-gradient(90deg, #ffffff 50%, transparent 50%);
+}
+
+.btn-four {
+    color: $color-one;
+    background-image: linear-gradient(90deg, #ffffff 50%, transparent 50%);
+}
+
+
+.work-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+}
+
+.skill-left {
+    object-fit: cover;
+    flex: 0 0 50%;
+    position: relative;
+    min-height: 300px;
+}
+
+.skill-image {
+    position: absolute;
+    width: 50%;
+    height: 80%; 
+}
+
+.skill-image img {
+    max-width: 250px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.skill-image :after {
+    position: relative;
+    opacity: 0.3;
+    right: 20px;
+    bottom: 20px;   
+}
+
+.skill-description {
+    padding: 36px 0 36px 55%;
+    text-align: left;
+}
+
+.skill-description p:last-of-type {
+    font-weight: bold; 
+}
+
+.skill-description .btn-five{
+    border: none;
+    margin: 36px 0; 
+    padding: 0; 
+    text-align: left;
+}
